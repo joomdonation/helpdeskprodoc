@@ -1,52 +1,64 @@
 ---
-title: 'Create And Reply Ticket Via Email'
-media_order: 'reply_via_email.png,hpd_reply_via_email_cron.zip,setup_cronjob_sample.png'
+title: 'Create and Reply to Tickets via Email'
 taxonomy:
     category:
         - docs
 ---
 
->>> This feature requires PHP 7.2.0+ to work. So if you are using older version of PHP, please update to PHP 7.2.0+ first before enabling this feature.
+The **System - Helpdeskpro Reply Via Email** plugin connects Helpdesk Pro to an IMAP mailbox such as `support@example.com`. Customers can email that address to open a ticket. Customers and support staff can reply to a ticket notification from their email client to add a public reply to the ticket.
 
-This is a nice feature available from Helpdesk Pro version 4.2.0. It allows:
+## Set Up the Mailbox and Notifications
 
-- Create support tickets when someone sends email to certain email address (for example contact@domain.com, support@domain.com)
-- Allow adding comments to support tickets by replying via email. That allows admin and customers to reply to a support tickets much easier. Instead of having to login to the website, access to support ticket and add comment to that ticket, you can just press Reply button in your mail client, write the message, add attachments if needed to reply.
+1. Use a dedicated mailbox for incoming support email. The plugin checks its **INBOX**, so keep incoming support mail there until it is processed. If you already use [Notification Emails](/getting-started/configuration#email-settings), send those notifications to a separate address so they stay out of the monitored inbox.
+2. In **Helpdesk Pro → Configuration → Email Settings**, set **Reply To Email** to the monitored address. This is where replies to Helpdesk Pro notifications go.
+3. In **Helpdesk Pro → Emails & Messages**, keep `#[TICKET_ID]` in the subject of every notification that recipients should be able to reply to. Helpdesk Pro replaces it with the ticket number, such as `#123`. Ask recipients to keep that number in the subject when they reply. See [Email Messages](/setup/email-messages#use-tags-in-subjects-and-bodies).
 
-In order to use this feature, please:
+## Configure the Plugin
 
-1. Go to Helpdesk Pro -> Configuration, add the email you want into **Reply To Email**. This is the email will receive email when admin/customers reply to ticket from his mail client. **Helpesk Pro** will then this and process all emails from that mailbox to create new ticket or add comment to an existing tickets
-2. Go to Extensions -> Plugins, find the plugin **System - Helpdeskpro Reply Via Email**, click on it to edit and enter neccessary paramerers like in the screenshot below:
+The bundled plugin requires PHP 8.0.1 or later with the `imap`, `mbstring`, and `iconv` extensions enabled for the PHP version serving your Joomla site.
 
-![Reply Via Email Plugin Parameters](reply_via_email.png)
+In the Joomla administrator area, go to **System → Manage → Plugins** and open **System - Helpdeskpro Reply Via Email**.
 
-Below are the meaning of some parameters (you can read [https://www.php.net/manual/en/function.imap-open.php](https://www.php.net/manual/en/function.imap-open.php) to understand the meaning of some parameters here)
+| Setting | What to enter |
+| --- | --- |
+| **New Ticket Category** | Select the category for new tickets created from email. Leave it unselected to accept replies only. |
+| **Host** and **Port** | Enter the IMAP server hostname and port provided by your mail provider. The default port is `993`. |
+| **Encryption** | Match your provider's IMAP settings. Choose `ssl` for an encrypted connection from the start, `tls` for STARTTLS, or `notls` to disable STARTTLS. The default is `ssl`. |
+| **Validate Certificates** | Keep **Yes**, the default, so the plugin verifies the mail server's certificate. |
+| **Username** and **Password** | Enter the mailbox's IMAP credentials. The username is often the full email address. |
+| **Ignore Subjects** | Enter one complete subject per line, using the same capitalization as the incoming message. Useful for skipping known automated messages. |
+| **Ignore Emails** | Enter one sender address per line to skip mail from specific addresses. |
+| **Allow User Groups** | Select any Joomla groups that may submit tickets or reply by email. The sender address must match a Joomla account in at least one selected group. Leave this empty to accept mail from senders without an account, subject to the other filters. |
+| **Secret Code** | Enter a long, random code for scheduled processing. Keep the code and trigger URL private. |
 
-1. **Encryption**
-- **ssl**:Use the Secure Socket Layer to encrypt the session
-- **tls**:Force use of start-TLS to encrypt the session, and reject connection to servers that do not support it
-- **notls**:Do not do start-TLS to encrypt the session, even with servers that support it
-2. **Validate Certificates:
-- **Yes**: validate certificates from TLS/SSL server (this is the default behavior)
-- **No**: do not validate certificates from TLS/SSL server, needed if server uses self-signed certificates
+Enable the plugin and save.
 
-3. **Setup Cron Job**
-You should setup cron job to trigger **System - Helpdeskpro Reply Via Email** plugin to fetch new emails and to create new ticket or add comments to existing ticket. Follow instructions at https://stackoverflow.com/questions/11375260/cron-command-to-run-url-address-every-5-minutes to setup a cron job to make a request to the URL: https://domain.com/index.php?secret_code=TEST every 5 or 10 minutes (or the time you want) using CURL
+## Schedule Mailbox Checks
 
-- Replace https://domain.com/ with URL of your site
-- Replace TEST with with the text/string you entered into **Secret Code** parameter of the **System - Helpdeskpro Reply Via Email** plugin
+In your hosting control panel, create a cron job that requests your site's `index.php` with the plugin's **Secret Code**. For example, this cron entry checks the mailbox every five minutes.
 
-You can ask for help from your hosting provider to setup it is needed. Sample cron job:
+```cron
+*/5 * * * * curl --fail --silent --show-error 'https://example.com/index.php?secret_code=REPLACE_WITH_YOUR_SECRET_CODE'
+```
 
-*/5 * * * * curl --request GET 'https://domain.com/index.php?secret_code=TEST'
+Replace `https://example.com` with your site's base URL, including the Joomla subdirectory if there is one. Replace `REPLACE_WITH_YOUR_SECRET_CODE` with the code you saved in the plugin. If your control panel has separate fields for the schedule and command, enter the part starting with `curl` as the command.
 
-Please note that for testing, you can also access to that PHP file directly from your web browser by entering https://domain.com/index.php?secret_code=TEST
+You can open the same URL in your browser to run a check immediately. A blank page is normal. Check **Helpdesk Pro → Tickets** to verify the result.
 
-See the instrunctions in this screenshot. That's the right solution to use
+If you leave **Secret Code** empty, a Joomla page request can trigger a mailbox check once at least 20 minutes have passed since the last run. Processing depends on site traffic, and the request that triggers the check can return a blank page.
 
-![Cron Job Setup](setup_cronjob_sample.png)
+## How Incoming Email Is Processed
 
-4. Enable **System - Helpdeskpro Reply Via Email** plugin
+- A subject containing a ticket number such as `#123` is treated as a reply. If that ticket no longer exists, the message is skipped. A subject without a ticket number creates a new ticket only when **New Ticket Category** is selected.
+- A reply to a closed ticket is saved on the ticket. The ticket stays closed and Helpdesk Pro skips the reply notification.
+- Include some text in the message body. The plugin reads the plain-text part of the email and attempts to remove quoted conversation text. For attachments, it checks the file extension against [Allowed File Types](/getting-started/configuration#attachments).
+- The plugin checks **INBOX** for messages received within the last 10 days that IMAP reports as **Unanswered**. It leaves messages in the inbox and marks them **Answered** after handling them, including messages skipped by the filters.
 
->>> In case the parameters you entered into System - Helpdeskpro Reply Via Email plugin, and the system could not connect to the mailbox to get emails to process, the error message will be logged plugins/system/hdpreplyviaemail/logs.txt. You can check that folder to see if there is any error in case something not working as expected.
+## Test and Troubleshoot
 
+1. To test ticket creation, send a new email with a plain-text message and a subject without a ticket number. Run the mailbox check and confirm that the ticket appears in the configured category.
+2. To test replies, open a Helpdesk Pro notification and reply from the customer's email address, keeping `#` and the ticket number in the subject. Run the mailbox check again and confirm that the message appears on the same ticket.
+
+- If the message is still **Unanswered**, check that it arrived in **INBOX**, that the plugin is enabled, and that the cron job uses the saved code.
+- If the message is **Answered** but nothing appears in Helpdesk Pro, review the sender and subject filters, the message body, and the **New Ticket Category** or ticket number. Send a fresh message after changing the settings because the plugin skips mail already marked **Answered**.
+- For IMAP connection or login errors, check `plugins/system/hdpreplyviaemail/src/Extension/logs.txt` relative to your Joomla installation. Verify the host, port, encryption, and mailbox credentials against your mail provider's settings.
