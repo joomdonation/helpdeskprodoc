@@ -6,24 +6,20 @@ taxonomy:
         - docs
 ---
 
-During the installation process, Helodesk Pro will generate default configuration data. However, you should still review all config options and change it to meet your own requirement if needed.
-
-To review and change Configuration, go to **Helpdesk Pro** => **Configuration**. When you do that, the screen below will be displayed:
+Helpdesk Pro creates a default configuration during installation. Go to **Helpdesk Pro → Configuration** to review the settings and adjust them for your site. If a setting has help text, hover over its label to read it.
 
 ![Configuration](Configuration.png)
 
->>>>> To see the meaning of a config option / parameter, you can hover the moose over the name / title of that config option
-
-As most of the config options are very easy to understand, in the section below, we will just explain / review the most importants config options. If there are other options which are not mentioned here and you don't understand, feel free contact us for support. We are available to assist you whenever you want / you need.
-
 ## General Settings
-1. **Load Twitter Bootstrap Css In The Frontend**: This should be set to **No** unless your site template is built base on a frontend framework not supported by Helpdesk Pro (currently, Helpdesk Pro supports **Twitter Bootstrap 2**, **Twitter Bootstrap 3**, **Twitter Bootstrap 4** and **UIKIT3**).
-2. **Twitter Bootstrap Version**: Default to **Twitter Bootstrap version 2** because most of Joomla templates are buitl base on twitter bootstrap 2). If your site template is built base on Twitter Bootrap 3, Twitter Bootstrap 4 or UIKIT3, set this confict option to the appropriate value.
-3. **Enable Captcha**: If you want to prevent spam bots from spamming the tickets system, set this config option to Yes. You will also configure captcha plugin on your site, see [https://docs.joomla.org/J3.x:Google_ReCaptcha](https://docs.joomla.org/J3.x:Google_ReCaptcha) for instructions. Further more, you will also need to go to System -> Global Configuration, set **Default Captcha** config option to the captcha plugin which you configured.
-4. **Use Use HTML editor**: By default, Helpdesk Pro uses plain text (textarea) for submitting support ticket and adding comments/response. If you want to use Joomla editors, set this config option to Yes.
-5. **Enable Attachment**: Set to **Yes** to allow users to upload attachments while submitting/responding to support tickets. If you enable it, you should review Allowed file types and allow more field types if needed. 
-### Mail Settings
-1. **From Name**: The sender name uses to send emails in the system. Leave it empty to use the **From Name** which is setup in Global Configuration of your site.
-2. **From Email**: The sender email uses to send emails in the system. Leave it empty to use **From email** which is setup in Global Configuration of your site. 
-3. **Notification emails**: The emails you want to receive notification when users submit support tickets or reply to a support ticket on your site. If you want to user multiple emails, separate these emails by comma, for example: email1@domain.com,email2@domain.com.
-4. **Send ticket attachments to email**: If set to Yes, attachments uploaded when users submit/reply to ticket will be sent to admin/user email.
+
+- **Css Framework** sets the CSS framework Helpdesk Pro uses for its frontend layouts. The default is **Twitter Bootstrap Version 5**. Choose **UIKIT3** if your template uses UIkit 3.
+- **Load Twitter Bootstrap** loads Joomla's Bootstrap stylesheet when the CSS framework is set to Bootstrap 5. Set it to **No** if your template already loads Bootstrap CSS, or **Yes** to have Helpdesk Pro load it.
+- **Enable Captcha** helps prevent spam on ticket forms. Choose **Yes** to require CAPTCHA for everyone or **For Public Users Only** to require it only for visitors who are signed out. Enable and configure a CAPTCHA plugin in Joomla and select it as **Default Captcha** in **System → Global Configuration**.
+- **Use HTML editor** displays the Joomla editor for ticket descriptions and replies when set to **Yes**. By default, Helpdesk Pro uses a plain text area.
+- **Enable Attachment** lets users attach files to tickets and replies when set to **Yes**. Review **Allowed File Types** to control which files users can upload.
+
+## Email Settings
+
+- **From Name** and **From Email** set the sender name and address for Helpdesk Pro email. Leave either setting blank to use the corresponding value in Joomla's Global Configuration.
+- **Notification Emails** lists the addresses that receive new ticket and customer reply notifications for categories without managers. If you handle tickets yourself, enter the email address where you want to receive these notifications. Separate multiple addresses with commas, such as `support@example.com,helpdesk@example.com`.
+- **Send Ticket Attachments To Email** includes files uploaded with a ticket or reply in the notification email when set to **Yes**.

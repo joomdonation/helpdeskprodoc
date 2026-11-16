@@ -5,32 +5,30 @@ taxonomy:
         - docs
 ---
 
-**Helpdesk Pro** is a tool allows you to provide support for your customers (who use your products/services... of your company). Below is the workflow:
+Helpdesk Pro lets customers request support by submitting tickets on your Joomla site. In a simple setup, the administrator handles incoming tickets and replies directly. You can also appoint managers to handle specific categories and assign tickets to staff members.
 
-## Customer submit support ticket
-When customers need support, they will go to your site, access to **Submit Ticket** menu item to submit a support ticket. By default, while submitting ticket, they need to provide some information such as Subject, Message (describes the problem they are having or how they want to supported...), upload attachments (images/documents...) to provide more information about the support request.
+## Submit a Ticket
 
-If it's needed, you can create custom fields to collect more information about support request. Each support category can have different custom fields.
+Customers open the [**Submit Ticket**](/setup/menu-items#submit-ticket) menu item and enter a subject and a message describing their issue. If attachments are enabled, customers can add a screenshot or another supporting file. You can also add [custom fields](/setup/custom-fields) to collect different information for each support category.
 
-## New Ticket Notification
-When customers support ticket, your company will receive notification email about that support request. Depends on how you setup the system:
+## Receive a New Ticket Notification
 
-- If the category which the ticket is submitted to have Managers defined (multiple Managers for a category is possible), the manager(s) will receive notification about the ticket.
-- If the category does not have Managers, the emails which you setup to receive notification (usually Administrator email) will receive notification about this ticket.
+When a customer submits a ticket, Helpdesk Pro emails the managers of the selected category. If the category has no managers, Helpdesk Pro sends the notification to the addresses in **Notification Emails** under **Helpdesk Pro → Configuration**.
 
-## Assign Ticket To Staff
+## Assign a Ticket to a Staff Member
 
-This is optional process. In case your company has multiple staffs, Admin/Managers after receiving ticket can assign ticket to one staff. In this case, when a staff login, he will see list of assigned support tickets, see a ticket details and reply to the ticket. When he replies to a ticket, Admin/Managers will receive notification about the response (to monitor the support progress if needed)
+If you use support staff, the administrator or a category manager can assign a ticket to a staff member. The staff member receives an email and can open the ticket from their list of assigned tickets. If **Notify Managers When Staff Reply** is enabled, Helpdesk Pro also sends a copy of the reply notification to the category managers or, for categories without managers, to the addresses in **Notification Emails**.
 
-## Reply To Ticket
-Admin/Manage/Staff can access to a pages to see the open tickets which they have to work on. From there, they can click on each ticket to see the support request details and reply to the ticket. Reply to a ticket is a simple process, they will just add a comment to answer customer about the problem and maybe upload attachments to the response, too.
+## Reply to a Ticket
 
-When Admin/Manage/Staff add comment to ticket, customer who submitted that ticket will receive notification email from the system. If Staff add comment to ticket, The Admin/Managers will be notified (for managing/monitoring purpose)
+Administrators can open tickets from **Helpdesk Pro → Tickets** in the Joomla administrator area. Managers and staff can open their tickets from the [**Ticket List/ Manage Tickets**](/setup/menu-items#ticket-list-manage-tickets) menu item on the site.
 
-## Customer Reply To Ticket
+Open a ticket and use **Add comment** to reply. If attachments are enabled, you can include a file with the reply. The customer receives an email notification about the reply.
 
-When Admin/Managers/Staff reply to a ticket, customers will receive notification and continue adding more comments to the ticket until the problem is solved. When customer replies, Admin/Managers/Staff will received notification from the system.
+## Customer Follow-up
 
-## Rate And Close Ticket
-When the support request is completed, customers can close and rate for the ticket. Admin/Managers can close support ticket, too.
+Customers can open a ticket from their ticket list and add a comment. Helpdesk Pro sends the reply notification to the category managers or the addresses in **Notification Emails**, as it does for a new ticket. If the ticket is assigned to a staff member and **Notify Staff When Customer Reply** is enabled, that staff member also receives a notification.
 
+## Close and Rate a Ticket
+
+Once the issue is resolved, the customer, administrator, or category manager can close the ticket. Customers can rate the support they received if **Enable Rating** is set to **Yes**.
