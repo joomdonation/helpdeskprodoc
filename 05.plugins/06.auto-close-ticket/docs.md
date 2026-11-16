@@ -11,12 +11,7 @@ Tickets in any status other than the configured [Closed Ticket Status](/setup/ti
 
 ## Close Tickets on a Schedule
 
-Use the Joomla Task Scheduler if you want to choose when Joomla checks for inactive tickets.
-
-1. In **System → Manage → Plugins**, enable the Helpdesk Pro auto-close plugin in the **task** group. Search for **Auto Close Tickets**.
-2. Go to **System → Manage → Scheduled Tasks**, click **New**, and select **Helpdesk Pro - Auto Close Tickets**.
-3. Set **Delay** to the number of inactive days before a ticket closes. The default is **14** days and the minimum is **2**.
-4. Choose how often the task should run, such as once a day, then enable and save the task.
+Use the Joomla Task Scheduler if you want to choose when Joomla checks for inactive tickets. See [Auto Close Tickets](/scheduled-tasks#auto-close-tickets) for the task settings and setup steps.
 
 ## Close Tickets During Joomla Requests
 
