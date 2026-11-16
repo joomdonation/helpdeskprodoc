@@ -13,3 +13,5 @@ In a basic help desk, customers submit tickets and administrators reply. You can
 | **Administrator** | Manage and reply to tickets in all categories. |
 | **Manager** (optional) | Manage and reply to tickets in one or more assigned categories. |
 | **Staff** (optional) | View and reply to tickets that an administrator or category manager assigns to them. |
+
+Use [Set Up a Support Team](/setup/support-team) to give managers responsibility for a category or staff responsibility for assigned tickets. For the administrator-and-customer workflow, follow [Set Up Your First Help Desk](/getting-started/first-ticket).

@@ -5,7 +5,9 @@ taxonomy:
         - docs
 ---
 
-Helpdesk Pro plugins can add tools and information to the right sidebar on ticket details pages. Other plugins let you embed a ticket form in a Joomla article or close inactive tickets automatically.
+# Plugins
+
+Helpdesk Pro bundles plugins for ticket tools, Joomla integrations, and automation. Enable the ones your support workflow needs.
 
 To enable or configure a plugin, go to **System → Manage → Plugins** in the Joomla administrator area and search for its name.
 
@@ -18,3 +20,8 @@ To enable or configure a plugin, go to **System → Manage → Plugins** in the 
 | [Content - Helpdesk Pro](/plugins/content-helpdesk-pro) | Add the ticket submission form to an existing Joomla article. |
 | [Auto Close Ticket](/plugins/auto-close-ticket) | Close tickets after a period of inactivity. |
 | [Custom Messages](/plugins/custom-messages) | Show help links, notices, or instructions alongside tickets in selected categories. |
+| [System - Helpdeskpro Reply Via Email](/cerate-and-reply-tickets-via-email) | Read incoming support email from an IMAP mailbox and use it to create tickets or add replies. |
+| [Auto Close Tickets task](/scheduled-tasks#auto-close-tickets) | Close inactive tickets through Joomla’s Task Scheduler. |
+| [Smart Search - Helpdesk Pro Knowledge Base](/knowledge-base#include-articles-in-joomla-smart-search) | Include Helpdesk Pro articles in Joomla’s site-wide search. |
+| [Installer - Helpdesk Pro](/getting-started/installation#update-from-joomla) | Receive extension updates through Joomla using a Download ID. |
+| **User - Helpdeskpro** | Sync the email address on tickets linked to a Joomla account when the address changes through Joomla’s user manager or profile form. Enable the plugin to keep those tickets in sync. |

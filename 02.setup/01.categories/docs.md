@@ -29,11 +29,15 @@ In the Joomla administrator area, go to **Helpdesk Pro → Categories** and clic
 
 On a multilingual Joomla site, use the **Translation** tab to enter the title, alias, and description for each additional language.
 
+To publish help articles in a category, follow the [Knowledge Base guide](/knowledge-base).
+
 ## Assign Category Managers
 
 If administrators handle all tickets, leave the **Managers** tab empty. Otherwise, open the **Managers** tab, use the Joomla user picker to select a manager, and add a row for each additional manager. Save the category when you finish. Set managers on each category they should manage, including any subcategories.
 
 Managers can open and reply to tickets in their categories from the **Ticket List/ Manage Tickets** menu item on the site. Helpdesk Pro sends new ticket and customer reply notifications to the category managers. For categories without managers, Helpdesk Pro uses **Notification Emails** in [Configuration](/getting-started/configuration).
+
+See [Set Up a Support Team](/setup/support-team) to test a manager's queue and configure staff assignment.
 
 ## Check the Submit Ticket Form
 

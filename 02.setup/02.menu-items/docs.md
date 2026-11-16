@@ -63,6 +63,8 @@ Users can search and filter the list, open a ticket by clicking its subject, or 
 
 ## Knowledge Base Categories
 
+For the full workflow from creating a help article to publishing a menu link, see [Knowledge Base](/knowledge-base).
+
 Use this type as the landing page for a knowledge base organized by topic. It shows published categories that the visitor can access and that contain at least one published article. Each category shows its article count, its description if provided, and links to up to 10 articles. Visitors can click the category title to see its full article list.
 
 Create [categories](/setup/categories) with **Category Type** set to **Knowledge Base** or **Both**, then add and publish articles under **Helpdesk Pro → Knowledge Base**. In the menu item's **Options** tab, set **Number Columns** to the number of categories to display per row. The default is **2**.

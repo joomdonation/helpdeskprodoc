@@ -7,6 +7,8 @@ taxonomy:
 
 The **System - Helpdeskpro Reply Via Email** plugin connects Helpdesk Pro to an IMAP mailbox such as `support@example.com`. Customers can email that address to open a ticket. Customers and support staff can reply to a ticket notification from their email client to add a public reply to the ticket.
 
+Use this plugin if your support workflow needs incoming email. For a new help desk, start with [a test ticket on your site](/getting-started/first-ticket) to verify ticket creation and outgoing notifications before connecting the mailbox.
+
 ## Set Up the Mailbox and Notifications
 
 1. Use a dedicated mailbox for incoming support email. The plugin checks its **INBOX**, so keep incoming support mail there until it is processed. If you already use [Notification Emails](/getting-started/configuration#email-settings), send those notifications to a separate address so they stay out of the monitored inbox.

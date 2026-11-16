@@ -5,9 +5,11 @@ taxonomy:
         - docs
 ---
 
-In the Joomla administrator area, go to **Helpdesk Pro → Tickets** to review support requests from all categories. You can reply directly from this screen. Set up category managers or staff accounts if you want to delegate ticket handling.
+In the Joomla administrator area, go to **Helpdesk Pro → Tickets** to review support requests from all categories. You can reply directly from this screen. If you want to delegate ticket handling, [set up category managers or staff accounts](/setup/support-team).
 
 On the site, use a [Ticket List / Manage Tickets menu item](/setup/menu-items#ticket-list-manage-tickets) to give the support team access. Category managers see tickets in the categories they manage, plus tickets they submitted or that were assigned to them. Staff members see tickets assigned to them. Administrators can also use this menu item.
+
+To review ticket volumes, staff comments, or notification attempts, see [Reports and Email Logs](/manage-tickets/reports-and-email-logs).
 
 ## Find and Open a Ticket
 
@@ -72,3 +74,5 @@ Helpdesk Pro links the ticket to an existing Joomla account if the email address
 In the administrator area, open a ticket in a category whose [Category Type](/setup/categories) is **Both** and click **Convert to KB**. Helpdesk Pro publishes an article in the same category using the ticket subject and conversation. Converting the same ticket again refreshes the existing article from the ticket.
 
 Review the conversation before converting it. The article is published immediately and can include customer details or internal comments visible to you. For a conversation containing private information, write a separate article with the reusable answer under **Helpdesk Pro → Knowledge Base**.
+
+See [Knowledge Base](/knowledge-base) for publishing articles and making them easy to find on your site.

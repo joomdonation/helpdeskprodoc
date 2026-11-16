@@ -67,4 +67,4 @@ If you use [Reply via Email](/cerate-and-reply-tickets-via-email), keep `#[TICKE
 
 Submit a test ticket as a customer and check that the customer confirmation and team notification reach the expected inboxes. Reply as an administrator, then reply as the customer to check both directions. Test any optional notifications you enabled and open the links in the received messages to confirm they work for their intended recipients.
 
-If an email is missing, check the template subject and recipient settings. You can enable **Log Emails** in **Email Settings** and open **Helpdesk Pro → Emails Log** to see whether Helpdesk Pro attempted to send it.
+If an email is missing, check the template subject and recipient settings. Use [Emails Log](/manage-tickets/reports-and-email-logs#emails-log) to see whether Helpdesk Pro attempted to send it.
