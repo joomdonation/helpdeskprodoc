@@ -24,4 +24,4 @@ To enable or configure a plugin, go to **System → Manage → Plugins** in the 
 | [Auto Close Tickets task](/scheduled-tasks#auto-close-tickets) | Close inactive tickets through Joomla’s Task Scheduler. |
 | [Smart Search - Helpdesk Pro Knowledge Base](/knowledge-base#include-articles-in-joomla-smart-search) | Include Helpdesk Pro articles in Joomla’s site-wide search. |
 | [Installer - Helpdesk Pro](/getting-started/installation#update-from-joomla) | Receive extension updates through Joomla using a Download ID. |
-| **User - Helpdeskpro** | Sync the email address on tickets linked to a Joomla account when the address changes through Joomla’s user manager or profile form. Enable the plugin to keep those tickets in sync. |
+| [User - Helpdesk Pro](/plugins/user-helpdesk-pro) | Keep ticket email addresses in sync when customers change their Joomla account email. |
