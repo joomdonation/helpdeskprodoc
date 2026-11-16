@@ -6,12 +6,23 @@ taxonomy:
         - docs
 ---
 
-This plugin allow admin/manager assign support ticket to a support staff. To use this plugin:
+Use **Helpdesk Pro - Assign Ticket** when administrators or category managers need to hand off individual tickets to support staff. The plugin adds **Assign Ticket to Staff** to the ticket details sidebar for users with the **Assign Ticket** permission.
 
-1. Go to Users -> Groups, add a new user group called **Staff**. This should be child group of **Registered** user group
-2. Assign all staff users into that **Staff** user group
-3. Go to Extensions -> Plugins, find and enable the plugin **Helpdesk Pro - Assign Ticket**
-4. Now when Admin/Manager access to a ticket, they will see a section which allow assigning a support ticket to a staff (see the screenshot below)
+## Set Up Staff Assignment
 
+1. In the Joomla administrator area, go to **Users → Groups**. Create a group such as **Support Staff** under **Registered**, or use an existing group for your support staff. Add the staff accounts directly to that group.
+2. In **Helpdesk Pro → Configuration**, set **Staff Group** to that Joomla group. To change how staff are listed in the dropdown, set **Staff Display Field** to **Username** (the default), **Name**, or **Email**.
+3. Go to **System → Manage → Plugins**, find **Helpdesk Pro - Assign Ticket**, and enable it.
+4. If category managers will assign tickets, check **Helpdesk Pro → Tickets → Options → Permissions**. Grant **Assign Ticket** to the Joomla user group that should make assignments.
 
-![Assign Ticket](assign_ticket.png)
+## Assign a Ticket
+
+1. Open a ticket and find **Assign Ticket to Staff** in the sidebar.
+2. Select a staff member and click **Assign**. The staff member can then open the ticket from the [Ticket List / Manage Tickets menu item](/setup/menu-items#ticket-list-manage-tickets).
+3. To reassign a ticket, choose a different staff member and click **Assign** again. To clear the assignment, choose the **Select Staff** placeholder and click **Assign**.
+
+Helpdesk Pro uses the [Ticket Assigned Email](/setup/email-messages) to notify the assignee when someone else assigns them a ticket.
+
+If the sidebar section is missing, check that the plugin is enabled, your account has the **Assign Ticket** permission, and at least one unblocked Joomla user belongs directly to the configured **Staff Group**.
+
+![Assign Ticket to Staff section on the ticket details page](assign_ticket.png)
