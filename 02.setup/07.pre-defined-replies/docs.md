@@ -1,19 +1,32 @@
 ---
 title: 'Pre-defined Replies'
-media_order: 'pre-defined-replies.png,pre-defined-reply-item.png,add-predefined-reply.png'
+media_order: 'pre-defined-replies.png,add-predefined-reply.png'
 taxonomy:
     category:
         - docs
 ---
 
-During support process, you will realize that there are some response/reply message which you have to use again and again to reply to support request from different customers. To avoid having to type these messages again and again, you can use **Pre-defined Replies** feature in the extension
+Save answers to common support questions as pre-defined replies. For example, you can save instructions for downloading an invoice or ask customers for the information you need to investigate a problem.
 
-1. Go to Helpdesk Pro -> Predefined Replies to add these pre-defined replies. Each pre-defined reply contain a Subject and a Message
-2. Go to Extensions -> Plugins, enable **Helpdesk Pro - Pre-reply messages** plugin.
-3. When you reply to a suppor ticket, you can select a pre-defined reply and press **Add** button to add that pre-defined reply to the comment/message you are replying to customer.
+## Create a Pre-defined Reply
 
+1. In the Joomla administrator area, go to **Helpdesk Pro → Pre-defined Replies** and click **New**.
+2. Under **Category**, select the ticket category where the reply should be available. For example, choose **Billing** for invoice instructions. A category-specific reply appears only on tickets in the selected category.
+3. Enter a **Title** that your support team can recognize in the dropdown, such as **Download an invoice**.
+4. Enter the reusable text in **Message**. This is the text that will be inserted into the ticket comment.
+5. Set **Published** to **Yes** and click **Save & Close**.
 
-![Pre-defined Replieds Management](pre-defined-replies.png)
-![Pre-defined Reply Item](pre-defined-reply-item.png)
-![Select and add pre-defiend reply](add-predefined-reply.png)
+The **All** option is intended for replies shared across categories. If saving with **All** fails or the reply is missing from the ticket, select the ticket's specific category and save again.
+
+## Manage Saved Replies
+
+Click a reply's title to edit it. Unpublish a reply to remove it from the ticket dropdown while keeping it available for future use. To change the order in the dropdown, sort the list by **Ordering** and drag the replies into the desired order.
+
+![Pre-defined Replies list in the Joomla administrator area](pre-defined-replies.png)
+
+## Use a Saved Reply
+
+Enable the [Helpdesk Pro - Pre-reply messages plugin](/plugins/pre-defined-replies). On a ticket in the reply's category, open the comment form, select the reply by title, and click **Add reply**. Edit the inserted message for the customer, then click **Add Comment** to post it.
+
+![Selecting a pre-defined reply and clicking Add reply on a ticket](add-predefined-reply.png)
 
