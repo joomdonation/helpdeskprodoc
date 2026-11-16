@@ -1,7 +1,6 @@
 ---
-title: 'Can I access to backend of demo site?'
+title: 'Can I access the demo site’s administrator area?'
 visible: true
 ---
 
-Sorry, we do not give access to backend of demo site because we do not want customers to change the demo data which we prepared. However, we do provide money back warranty, so if you want, you can purchase a copy of the extension to try. If it's not working as expected, you can request us for refund
-
+We keep the demo site’s administrator area private so the demo data stays intact. You can purchase Helpdesk Pro to try the administrator features on your own site. If it does not work as expected, you can request a refund under our money-back guarantee.
