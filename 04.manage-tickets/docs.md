@@ -9,7 +9,7 @@ In the Joomla administrator area, go to **Helpdesk Pro → Tickets** to review s
 
 On the site, use a [Ticket List / Manage Tickets menu item](/setup/menu-items#ticket-list-manage-tickets) to give the support team access. Category managers see tickets in the categories they manage, plus tickets they submitted or that were assigned to them. Staff members see tickets assigned to them. Administrators can also use this menu item.
 
-To review ticket volumes, staff comments, or notification attempts, see [Reports and Email Logs](/manage-tickets/reports-and-email-logs).
+To follow ticket volume over time or compare categories, see [Dashboard](/manage-tickets/dashboard). To review ticket totals by manager or staff member, support comments, or notification attempts, see [Reports and Email Logs](/manage-tickets/reports-and-email-logs).
 
 ## Find and Open a Ticket
 

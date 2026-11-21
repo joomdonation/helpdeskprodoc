@@ -9,7 +9,7 @@ Use these screens in the Joomla administrator area to check ticket volume, revie
 
 ## Dashboard
 
-Open **Helpdesk Pro → Dashboard** for an overview of categories, tickets, closed tickets, and comments. Use the period selector to focus the statistics on a time range. The ticket chart shows ticket volume, and **Latest Updated Tickets** links to recent conversations.
+Open **Helpdesk Pro → Dashboard** for summary statistics, recent conversations, and a ticket-volume chart. The summary cards and chart have separate period controls. Use the chart to filter by category, compare categories, or compare submissions with the previous year. See [Dashboard](/manage-tickets/dashboard) for the controls and how each statistic is counted.
 
 ## Tickets Report
 

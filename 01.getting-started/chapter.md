@@ -15,5 +15,6 @@ Start with [Installation](/getting-started/installation), then [set up your firs
 | Give different people responsibility for categories or individual tickets | [User Roles](/getting-started/user-roles) and [Set Up a Support Team](/setup/support-team) |
 | Publish answers customers can find on their own | [Knowledge Base](/knowledge-base) |
 | Let customers and support staff work from their inboxes | [Create and Reply to Tickets via Email](/cerate-and-reply-tickets-via-email) |
-| Review ticket volume or troubleshoot email notifications | [Reports and Email Logs](/manage-tickets/reports-and-email-logs) |
+| Follow ticket volume over time or compare categories | [Dashboard](/manage-tickets/dashboard) |
+| Review support activity or troubleshoot email notifications | [Reports and Email Logs](/manage-tickets/reports-and-email-logs) |
 
