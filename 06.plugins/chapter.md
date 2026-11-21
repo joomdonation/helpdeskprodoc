@@ -21,7 +21,7 @@ To enable or configure a plugin, go to **System → Manage → Plugins** in the 
 | [Auto Close Ticket](/plugins/auto-close-ticket) | Close tickets after a period of inactivity. |
 | [Custom Messages](/plugins/custom-messages) | Show help links, notices, or instructions alongside tickets in selected categories. |
 | [System - Helpdeskpro Reply Via Email](/cerate-and-reply-tickets-via-email) | Read incoming support email from an IMAP mailbox and use it to create tickets or add replies. |
-| [Auto Close Tickets task](/scheduled-tasks#auto-close-tickets) | Close inactive tickets through Joomla’s Task Scheduler. |
+| [Task - Helpdesk Pro](/scheduled-tasks) | Close inactive tickets and clean up old attachments, sensitive data, or whole tickets through Joomla's Task Scheduler. |
 | [Smart Search - Helpdesk Pro Knowledge Base](/knowledge-base#include-articles-in-joomla-smart-search) | Include Helpdesk Pro articles in Joomla’s site-wide search. |
 | [Installer - Helpdesk Pro](/getting-started/installation#update-from-joomla) | Receive extension updates through Joomla using a Download ID. |
 | [User - Helpdesk Pro](/plugins/user-helpdesk-pro) | Keep ticket email addresses in sync when customers change their Joomla account email. |
