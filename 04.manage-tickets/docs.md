@@ -35,6 +35,12 @@ A customer-facing reply appears on the customer's ticket page and uses the [Tick
 
 To correct a posted reply, use **Edit This Comment**. To remove it, use **Delete This Comment**. These controls appear when your account has the corresponding permission.
 
+### Use Sensitive Data
+
+If a customer supplied access details in the separate **Sensitive data** field, click **Show sensitive data** below the original message or the relevant comment to read them. These fields are excluded from notification emails, the ticket print view, and articles created with **Convert to KB**. With **Enable Sensitive Data** set to **Customers Only**, the support team can read the details but does not see the sensitive-data input when replying.
+
+Closing a ticket permanently clears its sensitive data and the sensitive data in all its comments, including any supplied with a closing reply. Reopening the ticket does not restore it. A scheduled cleanup task can also clear sensitive data from inactive tickets while leaving them open. See [Sensitive Data](/setup/sensitive-data) for configuration and usage.
+
 ### Add an Internal Comment
 
 Select **Internal Comment?** before posting a note for your team, such as what you have already checked or what the next person should do. Submit it with **Add Comment** or **Add Comment => List**. An internal note keeps the current ticket status. **Add Internal Comments** and **View Internal Comments** in [Configuration](/getting-started/configuration#staff-assignment-and-ticket-permissions) control who can write and read the note.

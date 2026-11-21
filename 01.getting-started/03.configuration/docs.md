@@ -48,6 +48,12 @@ For replies posted through the ticket page, choose **Don't change status** in ei
 - **Max Number Attachments Per Message** sets the number of files users can select for a ticket or reply. The default is **3**.
 - **Max Attachment File Size** sets a per-file upload limit. Enter a size and select a unit. A value of `0` leaves uploads subject to the server's PHP upload limits. The screen shows PHP's `upload_max_filesize` for reference.
 
+### Sensitive data
+
+**Enable Sensitive Data** adds a separate optional field for access details when users submit tickets or add comments. It defaults to **No**. Choose **Yes** to show the input to customers and the support team, or **Customers Only** to show the reply input only to customers. Both enabled options show the field on the ticket submission form and let authorized support team members read submitted details.
+
+Sensitive data is deleted when the ticket closes. You can also configure a scheduled task to clear it after a period of inactivity. See [Sensitive Data](/setup/sensitive-data) for setup, usage, and deletion behavior.
+
 ### Frontend layout and editor
 
 - **Css Framework** sets the CSS framework Helpdesk Pro uses for its frontend layouts. The default is **Twitter Bootstrap Version 5**. Choose **UIKIT3** if your template uses UIkit 3.

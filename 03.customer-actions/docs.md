@@ -37,6 +37,12 @@ Signed-in customers can delete their own replies. If the site grants permission 
 
 If the site has configured replies by email, you can also reply directly to a ticket notification. See [Create and Reply to Tickets via Email](/cerate-and-reply-tickets-via-email).
 
+## Share Sensitive Data
+
+If **Add sensitive data** appears below the message when you submit a ticket or add a comment, expand it to enter access details such as a site URL, username, and password. Keep these details in the separate **Sensitive data** field so they can be removed automatically. To read a saved entry, open the ticket and click **Show sensitive data** below the relevant message.
+
+These separate fields are excluded from notification emails and the ticket print view. They are deleted when the ticket closes and may also be deleted after a period of inactivity. Reopening a ticket does not restore deleted details. See [Sensitive Data](/setup/sensitive-data).
+
 ## Rate and Close Ticket
 
 - To send a final message and close the ticket in one step, click **Add comment**, write your message, and choose **Add comment and Close Ticket**.

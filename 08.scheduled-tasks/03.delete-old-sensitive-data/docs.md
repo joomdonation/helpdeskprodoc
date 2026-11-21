@@ -7,6 +7,10 @@ taxonomy:
 
 Use **Helpdesk Pro - Delete Old Sensitive Data** when you want to retain support conversations while removing sensitive details, such as temporary access credentials, after a period of inactivity.
 
+See [Sensitive Data](/setup/sensitive-data) to enable the separate input fields and learn how customers and the support team use them.
+
+> **Warning: Permanent deletion.** Sensitive data cleared by this task cannot be restored through Helpdesk Pro. Review the inactivity period before enabling or manually running the task, as it can also clear data from open tickets.
+
 On each run, the task permanently clears the separate **Sensitive Data** fields on eligible tickets and all their comments. It keeps the tickets, ordinary message text, and attachments, and does not change the ticket status. Information entered in ordinary messages or uploaded files is not removed by this task.
 
 Eligibility is based on the **ticket's last modification date**, including the time of day, rather than the date each sensitive entry was submitted. Posting a reply or saving a ticket edit restarts the inactivity period. The task applies across all categories and statuses, including open tickets, and continues to work when sensitive-data entry is disabled in Helpdesk Pro's configuration.
