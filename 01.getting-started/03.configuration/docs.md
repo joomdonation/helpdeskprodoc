@@ -52,6 +52,8 @@ For replies posted through the ticket page, choose **Don't change status** in ei
 
 **Enable Sensitive Data** adds a separate optional field for access details when users submit tickets or add comments. It defaults to **No**. Choose **Yes** to show the input to customers and the support team, or **Customers Only** to show the reply input only to customers. Both enabled options show the field on the ticket submission form and let authorized support team members read submitted details.
 
+Sensitive data is encrypted before it is stored in the database. Helpdesk Pro automatically generates the **Sensitive Data Encryption Key** when you enable the feature and save the configuration; this field is read-only and requires no manual entry.
+
 Sensitive data is deleted when the ticket closes. You can also configure a scheduled task to clear it after a period of inactivity. See [Sensitive Data](/setup/sensitive-data) for setup, usage, and deletion behavior.
 
 ### Frontend layout and editor

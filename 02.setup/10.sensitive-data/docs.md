@@ -13,6 +13,10 @@ Use **Sensitive Data** when customers need to share temporary access details, su
 2. Set **Enable Sensitive Data** to **Yes** or **Customers Only**.
 3. Save the configuration.
 
+Helpdesk Pro encrypts sensitive data before storing it in the database and decrypts it for display on the ticket page. This applies to the separate sensitive-data fields on both tickets and comments.
+
+When you enable the feature and save the configuration, Helpdesk Pro automatically generates an encryption key if one does not already exist. The **Sensitive Data Encryption Key** field is read-only; you do not need to enter or manage a key yourself. The existing key is retained for future use.
+
 | Option | Behavior |
 | --- | --- |
 | **No** (default) | Hides sensitive-data input and previously saved sensitive data on ticket pages. |
