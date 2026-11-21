@@ -6,7 +6,9 @@ taxonomy:
 
 # Getting Started
 
-Start with [Installation](/getting-started/installation), then [set up your first help desk](/getting-started/first-ticket). You’ll publish a support category, add a link for customers, and test a conversation from both sides.
+New to Helpdesk Pro? Read the [Introduction](/getting-started/introduction) to understand what it does, who it is for, and which features could suit your site.
+
+When you are ready to set it up, follow [Installation](/getting-started/installation), then [set up your first help desk](/getting-started/first-ticket). You'll publish a support category, add a link for customers, and test a conversation from both sides.
 
 | If you want to | Go to |
 | --- | --- |
