@@ -1,6 +1,6 @@
 ---
 title: 'Ticket Priority'
-media_order: ticket-priority.png
+media_order: Heldpesk-Pro-Ticket-Priorities-Management.png
 taxonomy:
     category:
         - docs
@@ -12,5 +12,5 @@ Go to **Helpdesk Pro** -> **Ticket Priorities** to manage Ticket Priorities in t
 
 If you don't want customers has to choose ticket priority while submitting support ticket (to simplify the process), you can unpublish all the ticket priorities in the system
 
-![Ticket Priorities](ticket-priority.png)
+![Heldpesk-Pro-Ticket-Priorities-Management](Heldpesk-Pro-Ticket-Priorities-Management.png "Heldpesk-Pro-Ticket-Priorities-Management")
 

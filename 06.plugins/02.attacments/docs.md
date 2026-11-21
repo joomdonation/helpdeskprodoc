@@ -1,6 +1,6 @@
 ---
 title: Attachments
-media_order: ticket_attachments.png
+media_order: Heldpesk-Pro-Ticket-Attachments-Plugin.png
 taxonomy:
     category:
         - docs
@@ -15,4 +15,4 @@ To let users upload new files, configure **Enable Attachment**, **Allowed File T
 
 **Internal comments:** The sidebar can show attachments from internal comments to customers who can open the ticket. Leave this plugin disabled if your team attaches files to internal comments.
 
-![File links in the Ticket Attachments sidebar](ticket_attachments.png)
+![Heldpesk-Pro-Ticket-Attachments-Plugin](Heldpesk-Pro-Ticket-Attachments-Plugin.png "Heldpesk-Pro-Ticket-Attachments-Plugin")

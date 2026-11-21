@@ -1,6 +1,6 @@
 ---
 title: 'Ticket Statuses'
-media_order: ticket-statuses.png
+media_order: Heldpesk-Pro-Ticket-Statuses-Management.png
 taxonomy:
     category:
         - docs
@@ -8,7 +8,7 @@ taxonomy:
 
 Ticket statuses help you see which requests need a response from your support team and which are waiting for the customer. In the Joomla administrator area, go to **Helpdesk Pro → Ticket Statuses** to view or edit the available statuses.
 
-![Ticket Statuses](ticket-statuses.png)
+![Heldpesk-Pro-Ticket-Statuses-Management](Heldpesk-Pro-Ticket-Statuses-Management.png "Heldpesk-Pro-Ticket-Statuses-Management")
 
 ## Default Ticket Workflow
 

@@ -1,6 +1,6 @@
 ---
 title: Categories
-media_order: 'categories.png'
+media_order: 'Helpdesk-Pro-Categories.png,Heldpesk-Pro-Add-New-Category.png'
 taxonomy:
     category:
         - docs
@@ -11,11 +11,13 @@ process:
 
 Categories organize support tickets by product, department, or topic. For a basic help desk, start with one published category such as **General Support**. You can add more categories and appoint managers as your support team grows.
 
+![Helpdesk-Pro-Categories](Helpdesk-Pro-Categories.png "Helpdesk-Pro-Categories")
+
 ## Add a Category
 
 In the Joomla administrator area, go to **Helpdesk Pro → Categories** and click **New**. Fill in the **General** tab and click **Save & Close**. To change an existing category, click its title in the list.
 
-![Helpdesk Pro Categories list](categories.png)
+![Heldpesk-Pro-Add-New-Category](Heldpesk-Pro-Add-New-Category.png "Heldpesk-Pro-Add-New-Category")
 
 | Setting | What to enter |
 | --- | --- |

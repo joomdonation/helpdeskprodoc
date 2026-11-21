@@ -1,6 +1,6 @@
 ---
 title: Configuration
-media_order: Configuration.png
+media_order: Helpdesk-Pro-Configuration.png
 taxonomy:
     category:
         - docs
@@ -8,7 +8,7 @@ taxonomy:
 
 Helpdesk Pro creates a default configuration during installation. Go to **Helpdesk Pro → Configuration** to review the settings and adjust them for your site. If a setting has help text, hover over its label to read it.
 
-![Configuration](Configuration.png)
+![Helpdesk-Pro-Configuration](Helpdesk-Pro-Configuration.png "Helpdesk-Pro-Configuration")
 
 ## General Settings
 

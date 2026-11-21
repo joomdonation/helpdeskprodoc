@@ -1,6 +1,6 @@
 ---
 title: 'Pre-defined Replies'
-media_order: pre-defined-reply.png
+media_order: Heldpesk-Pro-Predefined-Reply-Plugin.png
 taxonomy:
     category:
         - docs
@@ -19,6 +19,6 @@ taxonomy:
 2. Place the cursor where you want the saved text to appear. In **Pre-defined replies**, select the reply by title and click **Add reply** to insert the message into the comment.
 3. Edit the message for the customer and click **Add Comment** to post it.
 
-![Pre-defined replies dropdown and Add reply button on a ticket](pre-defined-reply.png)
+![Heldpesk-Pro-Predefined-Reply-Plugin](Heldpesk-Pro-Predefined-Reply-Plugin.png "Heldpesk-Pro-Predefined-Reply-Plugin")
 
 If the dropdown is missing, check that the plugin is enabled, you are viewing the ticket as an administrator, category manager, or staff member, and at least one published reply applies to the ticket’s category.

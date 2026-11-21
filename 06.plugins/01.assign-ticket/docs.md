@@ -1,6 +1,6 @@
 ---
 title: 'Assign Ticket'
-media_order: assign_ticket.png
+media_order: Heldpesk-Pro-Assign-Ticket-Plugin.png
 taxonomy:
     category:
         - docs
@@ -25,4 +25,4 @@ Helpdesk Pro uses the [Ticket Assigned Email](/setup/email-messages) to notify t
 
 If the sidebar section is missing, check that the plugin is enabled, your account has the **Assign Ticket** permission, and at least one unblocked Joomla user belongs directly to the configured **Staff Group**.
 
-![Assign Ticket to Staff section on the ticket details page](assign_ticket.png)
+![Heldpesk-Pro-Assign-Ticket-Plugin](Heldpesk-Pro-Assign-Ticket-Plugin.png "Heldpesk-Pro-Assign-Ticket-Plugin")

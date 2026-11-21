@@ -1,6 +1,6 @@
 ---
 title: 'Pre-defined Replies'
-media_order: 'pre-defined-replies.png,add-predefined-reply.png'
+media_order: 'Heldpesk-Pro-Predefined-Replies-Management.png,Heldpesk-Pro-Predefined-Reply-Plugin.png'
 taxonomy:
     category:
         - docs
@@ -22,11 +22,11 @@ The **All** option is intended for replies shared across categories. If saving w
 
 Click a reply's title to edit it. Unpublish a reply to remove it from the ticket dropdown while keeping it available for future use. To change the order in the dropdown, sort the list by **Ordering** and drag the replies into the desired order.
 
-![Pre-defined Replies list in the Joomla administrator area](pre-defined-replies.png)
+![Heldpesk-Pro-Predefined-Replies-Management](Heldpesk-Pro-Predefined-Replies-Management.png "Heldpesk-Pro-Predefined-Replies-Management")
 
 ## Use a Saved Reply
 
 Enable the [Helpdesk Pro - Pre-reply messages plugin](/plugins/pre-defined-replies). On a ticket in the reply's category, open the comment form, select the reply by title, and click **Add reply**. Edit the inserted message for the customer, then click **Add Comment** to post it.
 
-![Selecting a pre-defined reply and clicking Add reply on a ticket](add-predefined-reply.png)
+![Heldpesk-Pro-Predefined-Reply-Plugin](Heldpesk-Pro-Predefined-Reply-Plugin.png "Heldpesk-Pro-Predefined-Reply-Plugin")
 

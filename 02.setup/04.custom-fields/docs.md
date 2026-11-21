@@ -3,9 +3,12 @@ title: 'Custom Fields'
 taxonomy:
     category:
         - docs
+media_order: Heldpesk-Pro-Fields-Management.png
 ---
 
 Use custom fields to collect information your support team needs when customers submit tickets. For example, ask for an order number on **Billing** tickets, a version number on **Technical Support** tickets, or a website URL across all categories.
+
+![Heldpesk-Pro-Fields-Management](Heldpesk-Pro-Fields-Management.png "Heldpesk-Pro-Fields-Management")
 
 ## Create a Custom Field
 

@@ -1,6 +1,6 @@
 ---
 title: 'Ticket History'
-media_order: ticket-history.png
+media_order: Heldpesk-Pro-Tickets-History-Plugin.png
 taxonomy:
     category:
         - docs
@@ -17,4 +17,4 @@ The sidebar is visible to signed-in viewers on the site and in the administrator
 3. Set **Date Format** for the date next to each subject. The default, `m-d-Y`, displays a date such as `11-16-2026`. Use `d-m-Y` for `16-11-2026`.
 4. Enable and save the plugin. Open a ticket for a customer with several requests and check the list.
 
-![Recent tickets listed in the Ticket History sidebar](ticket-history.png)
+![Heldpesk-Pro-Tickets-History-Plugin](Heldpesk-Pro-Tickets-History-Plugin.png "Heldpesk-Pro-Tickets-History-Plugin")
