@@ -35,7 +35,7 @@ If you submitted as a guest, use the link in the email that opens the ticket wit
 
 Signed-in customers can delete their own replies. If the site grants permission to edit replies, use the edit icon beside your comment to correct it. The [Edit Ticket Roles setting](/getting-started/configuration#staff-assignment-and-ticket-permissions) controls whether **Edit Ticket** is available to update the original request.
 
-If the site has configured replies by email, you can also reply directly to a ticket notification. See [Create and Reply to Tickets via Email](/cerate-and-reply-tickets-via-email).
+If the site has configured replies by email, you can also reply directly to a ticket notification. See [Create and Reply to Tickets via Email](/create-and-reply-tickets-via-email).
 
 ## Share Sensitive Data
 

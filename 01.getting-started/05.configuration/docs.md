@@ -65,7 +65,7 @@ Sensitive data is deleted when the ticket closes. You can also configure a sched
 ## Email Settings
 
 - **From Name** and **From Email** set the sender name and address for Helpdesk Pro email. Leave either setting blank to use the corresponding value in Joomla's Global Configuration.
-- **Reply To Email** sets the address that receives replies to Helpdesk Pro notifications. If you use the **System - Helpdeskpro Reply Via Email** plugin, enter the mailbox monitored by the plugin. See [Create and Reply to Tickets via Email](/cerate-and-reply-tickets-via-email) for the mailbox setup.
+- **Reply To Email** sets the address that receives replies to Helpdesk Pro notifications. If you use the **System - Helpdeskpro Reply Via Email** plugin, enter the mailbox monitored by the plugin. See [Create and Reply to Tickets via Email](/create-and-reply-tickets-via-email) for the mailbox setup.
 - **Notification Emails** lists the addresses that receive new ticket and customer reply notifications for categories without managers. If you handle tickets yourself, enter the email address where you want to receive these notifications. Separate multiple addresses with commas, such as `support@example.com,helpdesk@example.com`.
 - **Notify Managers When Staff Reply** copies the email sent to the customer to the category managers when the assigned staff member replies. **Notify Other Managers When A Manager Reply** does the same when an administrator or manager replies, excluding the person who replied. For categories without managers, the copies go to **Notification Emails**.
 - **Notify Staff When Customer Reply** also alerts the staff member assigned to the ticket when the customer replies.

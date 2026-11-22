@@ -22,7 +22,7 @@ If you cannot find a ticket, choose **All** in the **Ticket Status** filter and 
 ## Reply to a Ticket
 
 1. Open the ticket and click **Add comment** next to **Comments**.
-2. Write your reply. If [attachments are enabled](/getting-started/configuration#attachments), you can add files. If the [Pre-defined Replies plugin](/plugins/pre-defined-replies) has a saved reply for this category, you can insert it and edit it before posting.
+2. Write your reply. If [attachments are enabled](/getting-started/configuration#attachments), you can add files. If the [Pre-defined Replies plugin](/setup/pre-defined-replies) has a saved reply for this category, you can insert it and edit it before posting.
 3. Choose how to post the reply.
 
 | Button | When to use it |
@@ -45,7 +45,7 @@ Closing a ticket permanently clears its sensitive data and the sensitive data in
 
 Select **Internal Comment?** before posting a note for your team, such as what you have already checked or what the next person should do. Submit it with **Add Comment** or **Add Comment => List**. An internal note keeps the current ticket status. **Add Internal Comments** and **View Internal Comments** in [Configuration](/getting-started/configuration#staff-assignment-and-ticket-permissions) control who can write and read the note.
 
-If the [Ticket Attachments plugin](/plugins/attacments) is enabled, its sidebar can show files from internal comments to customers who can open the ticket. Keep sensitive files out of internal comments when that plugin is enabled.
+If the [Ticket Attachments plugin](/plugins/attachments) is enabled, its sidebar can show files from internal comments to customers who can open the ticket. Keep sensitive files out of internal comments when that plugin is enabled.
 
 ## Update a Ticket
 

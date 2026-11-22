@@ -25,7 +25,7 @@ To change these defaults, go to [Helpdesk Pro → Configuration → General Sett
 
 Open a ticket and use **Change Ticket Status** to select a status manually. This action requires the **Change Ticket Status** permission and access to the ticket. To reopen a closed ticket, use the same control to select an open status.
 
-Use **Add Comment and Close Ticket** to post a final reply and close the ticket in one step. If **Enable Rating** is on, the customer can select **Rate & Close Ticket** to submit a rating and close the ticket. An [Auto Close Ticket plugin](/plugins/auto-close-ticket) can close inactive tickets automatically. These actions use the configured **Closed Ticket Status**. Customers can still view a closed ticket, and the ticket page hides the reply form from them.
+Use **Add Comment and Close Ticket** to post a final reply and close the ticket in one step. If **Enable Rating** is on, the customer can select **Rate & Close Ticket** to submit a rating and close the ticket. The [Auto Close Tickets scheduled task](/scheduled-tasks/auto-close-tickets) can close inactive tickets automatically. These actions use the configured **Closed Ticket Status**. Customers can still view a closed ticket, and the ticket page hides the reply form from them.
 
 ## Add a Custom Status
 

@@ -6,10 +6,24 @@ taxonomy:
         - docs
 ---
 
-If it's needed, you can create **Ticket Labels** and add Label for your ticket. Use label gives you another way to categorize and filter your tickets based on Label if needed.
-
-1. Go to Helpdesk Pro -> Ticket Labels to create and manage Ticket Labels
-2. When you view a ticket (from administrator area of your site), you can use Apply Label function to assign label to your ticket
-3. On Tickets Manage screen, you can filter tickets which has a Label assigned to
+Labels are an optional way for your support team to tag tickets, for example **Bug**, **Refund**, or **Waiting for developer**. Unlike categories, which the customer picks, labels are applied by the support team and let you filter the ticket list.
 
 ![Heldpesk-Pro-Labels-Management](Heldpesk-Pro-Labels-Management.png "Heldpesk-Pro-Labels-Management")
+
+## Create a Label
+
+1. In the Joomla administrator area, go to **Helpdesk Pro → Ticket Labels** and click **New**.
+2. Enter a **Title** and, optionally, a **Color**.
+3. Set **Published** to **Yes** and save.
+
+## Apply and Remove a Label
+
+1. Open a ticket as an administrator, category manager, or staff member. Customers do not see this control.
+2. Choose **Apply Label** above the conversation and select a label.
+3. To remove the label, choose **NO LABEL**.
+
+A ticket has one label at a time. Choosing another label replaces the first.
+
+## Find Labeled Tickets
+
+Use the label filter in the [ticket list](/manage-tickets#find-and-open-a-ticket) to show only tickets with a chosen label.

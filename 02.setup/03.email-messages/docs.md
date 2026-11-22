@@ -61,7 +61,7 @@ Helpdesk Pro replaces tags with ticket details when it sends the message. Copy t
 | `[MANAGER_NAME]` | The person who replied in **Ticket Updated User Email**, made the assignment in either assignment template, or closed or changed the status of the ticket in the corresponding customer template. |
 | `[OLD_STATUS]`, `[NEW_STATUS]` | Previous and new status names in either status-change template. |
 
-If you use [Reply via Email](/cerate-and-reply-tickets-via-email), keep `#[TICKET_ID]` in the subject of any notification people will reply to. The plugin uses that number to match an incoming reply to the ticket.
+If you use [Reply via Email](/create-and-reply-tickets-via-email), keep `#[TICKET_ID]` in the subject of any notification people will reply to. The plugin uses that number to match an incoming reply to the ticket.
 
 ## Test Your Messages
 

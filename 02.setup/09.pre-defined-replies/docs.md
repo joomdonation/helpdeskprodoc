@@ -26,7 +26,13 @@ Click a reply's title to edit it. Unpublish a reply to remove it from the ticket
 
 ## Use a Saved Reply
 
-Enable the [Helpdesk Pro - Pre-reply messages plugin](/plugins/pre-defined-replies). On a ticket in the reply's category, open the comment form, select the reply by title, and click **Add reply**. Edit the inserted message for the customer, then click **Add Comment** to post it.
+Replies are inserted by the **Helpdesk Pro - Pre-reply messages** plugin. It adds a **Pre-defined replies** dropdown to the ticket sidebar for administrators, category managers, and staff.
+
+1. In **System → Manage → Plugins**, search for **Helpdesk Pro - Pre-reply messages** and enable it.
+2. Open a ticket in the reply's category and click **Add comment**.
+3. Place the cursor where the saved text should appear, select the reply by title in **Pre-defined replies**, and click **Add reply**.
+4. Edit the inserted message for the customer, then click **Add Comment** to post it.
 
 ![Heldpesk-Pro-Predefined-Reply-Plugin](Heldpesk-Pro-Predefined-Reply-Plugin.png "Heldpesk-Pro-Predefined-Reply-Plugin")
 
+If the dropdown is missing, check that the plugin is enabled, you are viewing the ticket as an administrator, category manager, or staff member, and at least one published reply applies to the ticket's category.

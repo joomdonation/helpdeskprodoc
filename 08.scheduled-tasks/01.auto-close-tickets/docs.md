@@ -26,3 +26,11 @@ Closing a ticket also permanently clears the sensitive data stored on that ticke
 A daily schedule is suitable for many sites. If more tickets qualify than the per-run limit allows, the remaining tickets stay open until later runs process them. See [Tickets per Run](/scheduled-tasks#tickets-per-run) for advice on handling a backlog.
 
 If you are upgrading from an older version, check for an existing auto-close task before creating another. If the older **System - Helpdeskpro Auto Close Ticket** plugin is still installed and enabled, disable it when switching to Scheduled Tasks so a single inactivity period and schedule apply.
+
+## Older Installations: System Plugin
+
+Versions before the scheduled tasks used the **System - Helpdeskpro Auto Close Ticket** plugin, which checks for inactive tickets during normal Joomla page requests instead of on a schedule. If your site still has it:
+
+1. Go to **System → Manage → Plugins** and open **System - Helpdeskpro Auto Close Ticket**.
+2. Note its **Number Days** (default **14**) and **Cache Time (Hours)** (default **2**, the minimum time between checks) so you can reproduce the same policy in the scheduled task.
+3. Create the scheduled task described above, then disable the plugin so only one inactivity period and schedule apply.
